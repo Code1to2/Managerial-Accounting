@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Chapter 1 Learning Module: The Meaning of Financial Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #746660;
+            background-color: #F1F2F1;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF6900;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            border-bottom: 3px solid #FF6900;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #FF6900;
+            margin: 30px 0 20px 0;
+            font-size: 1.5em;
+            background: linear-gradient(135deg, #FF6900, #24A2D9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h3 {
+            color: #24A2D9;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+        h4 {
+            color: #746660;
+            margin: 20px 0 10px 0;
+            font-size: 1.1em;
+        }
+        .learning-objectives {
+            background: linear-gradient(135deg, #FF6900, #24A2D9);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .learning-objectives h2 {
+            color: white;
+            margin-top: 0;
+        }
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .objective-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 4px solid white;
+        }
+        .module-structure {
+            background: #D1C1CE;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .structure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .structure-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #746660;
+            border: 2px solid #FF6900;
+        }
+        .key-concept {
+            background: #24A2D9;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .key-concept h4 {
+            color: white;
+            margin-top: 0;
+        }
+        .example-box {
+            background: #F1F2F1;
+            border-left: 5px solid #FF6900;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .formula-box {
+            background: #746660;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        .memory-tip {
+            background: #D1C1CE;
+            border: 2px dashed #FF6900;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .memory-tip::before {
+            content: '💡 ';
+            font-size: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+        th {
+            background: #FF6900;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #B4B3B9;
+        }
+        tr:nth-child(even) {
+            background: #F1F2F1;
+        }
+        .warning {
+            background: #FF6900;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .warning::before {
+            content: '⚠️ ';
+            font-size: 1.2em;
+        }
+        .checklist {
+            background: #F1F2F1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .checklist ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #B4B3B9;
+        }
+        .checklist li::before {
+            content: '☐ ';
+            font-size: 1.2em;
+            color: #FF6900;
+        }
+        .success-factors {
+            background: linear-gradient(135deg, #24A2D9, #FF6900);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .success-factors h3 {
+            color: white;
+        }
+        .practice-example {
+            background: #B4B3B9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 2px solid #24A2D9;
+        }
+        .calculation {
+            background: #746660;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #FF6900, #24A2D9, #FF6900);
+            margin: 30px 0;
+            border-radius: 2px;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #FF6900, #24A2D9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .objectives-grid,
+            .structure-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>📚 Chapter 1 Learning Module: The Meaning of Financial Management</h1>
+        
+        <div class='learning-objectives'>
+            <h2>📚 Learning Objectives</h2>
+            <p>By the end of this module, you will be able to:</p>
+            <div class='objectives-grid'>
+                <div class='objective-item'>✅ <strong>Explain</strong> the meaning of 'financial management'</div>
+                <div class='objective-item'>✅ <strong>Describe</strong> the role of the financial manager</div>
+                <div class='objective-item'>✅ <strong>Describe</strong> the goal of entities and sustainability influences</div>
+                <div class='objective-item'>✅ <strong>Explain</strong> business models and value creation</div>
+                <div class='objective-item'>✅ <strong>Identify</strong> key stakeholders and their relationships</div>
+                <div class='objective-item'>✅ <strong>Describe</strong> investment risk and return concepts</div>
+                <div class='objective-item'>✅ <strong>Explain</strong> capital markets functioning</div>
+                <div class='objective-item'>✅ <strong>Apply</strong> time value of money calculations</div>
+                <div class='objective-item'>✅ <strong>Calculate</strong> share and debt valuations</div>
+            </div>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <div class='module-structure'>
+            <h2>🎯 Module Structure</h2>
+            <div class='structure-grid'>
+                <div class='structure-item'>Section 1: Financial Management Fundamentals</div>
+                <div class='structure-item'>Section 2: Goals and Business Models</div>
+                <div class='structure-item'>Section 3: Stakeholder Management</div>
+                <div class='structure-item'>Section 4: Risk and Capital Markets</div>
+                <div class='structure-item'>Section 5: Time Value of Money Applications</div>
+                <div class='structure-item'>Section 6: Valuation Techniques</div>
+            </div>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 1: Financial Management Fundamentals</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: The Finance Function</h4>
+            <p><strong>Financial Management</strong> seeks to allocate financial resources through three primary activities:</p>
+        </div>
+
+        <div class='example-box'>
+            <h4>1. 💰 Financing Activities</h4>
+            <ul>
+                <li>Deciding which sources of funding to use</li>
+                <li>Determining optimal proportions of funding sources</li>
+                <li><em>Example</em>: Should we issue shares or take a loan?</li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h4>2. 📊 Investing Activities</h4>
+            <ul>
+                <li>Deciding which investments to undertake</li>
+                <li>Working within available fund limitations</li>
+                <li><em>Example</em>: Should we expand operations or develop new products?</li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h4>3. 🎯 Controlling Activities</h4>
+            <ul>
+                <li>Ensuring ethical implementation of financial decisions</li>
+                <li>Monitoring performance against targets</li>
+                <li><em>Example</em>: Regular budget reviews and compliance checks</li>
+            </ul>
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: The Six Capitals Framework</h4>
+            <p><strong>Remember</strong>: Financial capital is only ONE of six capitals:</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Capital Type</th>
+                <th>Description</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td>💵 Financial Capital</td>
+                <td>Funds for production</td>
+                <td>Cash, loans, equity</td>
+            </tr>
+            <tr>
+                <td>🏭 Manufactured Capital</td>
+                <td>Physical assets</td>
+                <td>Buildings, equipment, infrastructure</td>
+            </tr>
+            <tr>
+                <td>🧠 Intellectual Capital</td>
+                <td>Knowledge and patents</td>
+                <td>Patents, software, procedures</td>
+            </tr>
+            <tr>
+                <td>👥 Human Capital</td>
+                <td>Employee skills and experience</td>
+                <td>Skills, experience, motivation</td>
+            </tr>
+            <tr>
+                <td>🤝 Social Capital</td>
+                <td>Stakeholder relationships</td>
+                <td>Brand reputation, partnerships</td>
+            </tr>
+            <tr>
+                <td>🌍 Natural Capital</td>
+                <td>Environmental resources</td>
+                <td>Water, land, minerals, forests</td>
+            </tr>
+        </table>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Types of Finance Decisions</h4>
+            <p><strong>Equity vs. Debt Finance:</strong></p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Equity Finance</th>
+                <th>Debt Finance</th>
+            </tr>
+            <tr>
+                <td>Provided by shareholders</td>
+                <td>Provided by lenders</td>
+            </tr>
+            <tr>
+                <td>Ownership rights</td>
+                <td>No ownership rights</td>
+            </tr>
+            <tr>
+                <td>Dividends (variable)</td>
+                <td>Interest (fixed)</td>
+            </tr>
+            <tr>
+                <td>No repayment obligation</td>
+                <td>Must be repaid</td>
+            </tr>
+            <tr>
+                <td>Higher cost of capital</td>
+                <td>Lower cost (tax deductible)</td>
+            </tr>
+        </table>
+
+        <div class='memory-tip'>
+            <strong>Memory Tip</strong>: "EDON" - Equity = Dividends + Ownership + No repayment
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 2: Goals and Business Models</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Sustainable Value Creation</h4>
+            <p><strong>Primary Goal</strong>: Create and preserve long-term sustainable value for ALL stakeholders.</p>
+        </div>
+
+        <div class='example-box'>
+            <h4>Evolution of Business Goals:</h4>
+            <p><strong>1990s Approach</strong>: Shareholder Wealth Maximization</p>
+            <ul>
+                <li>Focus: Maximize profits for shareholders only</li>
+                <li>Problem: Short-term thinking, ignores other stakeholders</li>
+            </ul>
+            <p><strong>Modern Approach</strong>: Sustainable Value Creation</p>
+            <ul>
+                <li>Focus: Balance all stakeholder interests</li>
+                <li>Considers: People, Profit, Planet (Triple Bottom Line)</li>
+            </ul>
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Business Model Canvas</h4>
+            <p><strong>Osterwalder & Pigneur's 9 Building Blocks:</strong></p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Block</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><strong>Value Propositions</strong></td>
+                <td>Benefits to customers</td>
+                <td>"We save you 50% on insurance"</td>
+            </tr>
+            <tr>
+                <td><strong>Customer Segments</strong></td>
+                <td>Target customers</td>
+                <td>Young professionals, families</td>
+            </tr>
+            <tr>
+                <td><strong>Customer Relationships</strong></td>
+                <td>Service approach</td>
+                <td>Personal assistance, self-service</td>
+            </tr>
+            <tr>
+                <td><strong>Channels</strong></td>
+                <td>Delivery methods</td>
+                <td>Online, retail stores, agents</td>
+            </tr>
+            <tr>
+                <td><strong>Key Activities</strong></td>
+                <td>Critical tasks</td>
+                <td>Manufacturing, marketing, R&D</td>
+            </tr>
+            <tr>
+                <td><strong>Key Resources</strong></td>
+                <td>Essential assets</td>
+                <td>Technology, brand, capital</td>
+            </tr>
+            <tr>
+                <td><strong>Key Partnerships</strong></td>
+                <td>Strategic alliances</td>
+                <td>Suppliers, distributors</td>
+            </tr>
+            <tr>
+                <td><strong>Revenue Streams</strong></td>
+                <td>Income sources</td>
+                <td>Sales, subscriptions, licensing</td>
+            </tr>
+            <tr>
+                <td><strong>Cost Structure</strong></td>
+                <td>Major costs</td>
+                <td>Fixed costs, variable costs</td>
+            </tr>
+        </table>
+
+        <div class='memory-tip'>
+            <strong>Study Tip</strong>: Use the acronym "<strong>VC-CRC-KKK-RC</strong>" to remember the 9 blocks!
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 3: Stakeholder Management</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Stakeholder Groups</h4>
+        </div>
+
+        <div class='example-box'>
+            <h4>Primary Stakeholders (Direct impact):</h4>
+            <ul>
+                <li>👥 <strong>Shareholders</strong> - Expect returns and capital growth</li>
+                <li>🏦 <strong>Lenders</strong> - Expect interest and capital repayment</li>
+                <li>👷 <strong>Employees</strong> - Expect fair wages and job security</li>
+                <li>🛒 <strong>Customers</strong> - Expect quality products/services</li>
+                <li>📦 <strong>Suppliers</strong> - Expect prompt payment</li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h4>Secondary Stakeholders (Indirect impact):</h4>
+            <ul>
+                <li>🏛️ <strong>Government</strong> - Expects tax compliance and job creation</li>
+                <li>🌍 <strong>Society</strong> - Expects responsible business practices</li>
+                <li>🌱 <strong>Environment</strong> - Expects sustainable operations</li>
+            </ul>
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Stakeholder Engagement Benefits</h4>
+            <p><strong>Why Engage Stakeholders?</strong></p>
+            <ol>
+                <li>Better understanding of operating environment</li>
+                <li>More effective risk management</li>
+                <li>Improved reputation</li>
+                <li>Better products and services</li>
+                <li>Social license to operate</li>
+            </ol>
+        </div>
+
+        <div class='memory-tip'>
+            <strong>Memory Device</strong>: "<strong>BIRBS</strong>" - Better, Improved, Risk, Better, Social
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 4: Risk and Capital Markets</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Types of Risk</h4>
+        </div>
+
+        <div class='example-box'>
+            <h4>Business Risk (Operating Risk):</h4>
+            <ul>
+                <li>Risk from normal business operations</li>
+                <li>Examples: Competition, demand changes, supply issues</li>
+                <li>Classification by risk level:
+                    <ul>
+                        <li><strong>High Risk</strong>: Mining, Chemicals, Technology startups</li>
+                        <li><strong>Medium Risk</strong>: Restaurants, Manufacturing</li>
+                        <li><strong>Low Risk</strong>: Supermarkets, Utilities</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h4>Financial Risk (Leverage Risk):</h4>
+            <ul>
+                <li>Risk from using debt financing</li>
+                <li>Higher debt = Higher financial risk</li>
+                <li>Trade-off: Higher returns vs. Higher risk</li>
+            </ul>
+        </div>
+
+        <div class='formula-box'>
+            <strong>Key Insight</strong>: Total Risk = Business Risk + Financial Risk
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: JSE Market Structure</h4>
+            <p><strong>Primary vs. Secondary Markets:</strong></p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Primary Market</th>
+                <th>Secondary Market</th>
+            </tr>
+            <tr>
+                <td>Companies raise NEW capital</td>
+                <td>Existing shares are TRADED</td>
+            </tr>
+            <tr>
+                <td>IPOs, Rights issues</td>
+                <td>Daily trading between investors</td>
+            </tr>
+            <tr>
+                <td>Money goes TO the company</td>
+                <td>Money goes BETWEEN investors</td>
+            </tr>
+        </table>
+
+        <div class='example-box'>
+            <h4>JSE Listing Requirements:</h4>
+            <table>
+                <tr>
+                    <th><strong>Main Board</strong></th>
+                    <th><strong>AltX</strong></th>
+                </tr>
+                <tr>
+                    <td>R50 million minimum capital</td>
+                    <td>R2 million minimum capital</td>
+                </tr>
+                <tr>
+                    <td>3 years audited statements</td>
+                    <td>Profit forecast required</td>
+                </tr>
+                <tr>
+                    <td>R15 million profit before tax</td>
+                    <td>Designated Adviser needed</td>
+                </tr>
+                <tr>
+                    <td>20% public ownership</td>
+                    <td>10% public ownership</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 5: Time Value of Money Applications</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Concept: Why Money Has Time Value</h4>
+            <p><strong>Three Components of Interest Rates:</strong></p>
+            <ol>
+                <li>⏰ <strong>Time Value</strong> - Compensation for waiting</li>
+                <li>⚠️ <strong>Risk Premium</strong> - Compensation for uncertainty</li>
+                <li>📈 <strong>Inflation</strong> - Compensation for purchasing power loss</li>
+            </ol>
+        </div>
+
+        <div class='memory-tip'>
+            <strong>Memory Device</strong>: "<strong>TRI</strong>" - Time, Risk, Inflation
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Formula Set 1: Future Value</h4>
+        </div>
+
+        <div class='formula-box'>
+            <strong>Basic Future Value:</strong><br>
+            FV = PV(1 + i)ⁿ
+        </div>
+
+        <div class='formula-box'>
+            <strong>Future Value of Annuity:</strong><br>
+            FVA = PMT × [((1 + i)ⁿ - 1) / i]
+        </div>
+
+        <div class='practice-example'>
+            <h4>💡 Practice Example:</h4>
+            <p>Invest R10,000 at 8% for 5 years:</p>
+            <div class='calculation'>
+                FV = 10,000(1.08)⁵<br>
+                FV = 10,000(1.469)<br>
+                FV = R14,690
+            </div>
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Formula Set 2: Present Value</h4>
+        </div>
+
+        <div class='formula-box'>
+            <strong>Basic Present Value:</strong><br>
+            PV = FV / (1 + i)ⁿ
+        </div>
+
+        <div class='formula-box'>
+            <strong>Present Value of Annuity:</strong><br>
+            PVA = PMT × [1 - (1/(1 + i)ⁿ)] / i
+        </div>
+
+        <div class='formula-box'>
+            <strong>Present Value of Perpetuity:</strong><br>
+            PV = PMT / i
+        </div>
+
+        <div class='practice-example'>
+            <h4>💡 Practice Example:</h4>
+            <p>Value of R5,000 received in 3 years at 10% discount rate:</p>
+            <div class='calculation'>
+                PV = 5,000 / (1.10)³<br>
+                PV = 5,000 / 1.331<br>
+                PV = R3,756
+            </div>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>📖 Section 6: Valuation Techniques</h2>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Formula Set 3: Share Valuation</h4>
+        </div>
+
+        <div class='formula-box'>
+            <strong>No Growth Model:</strong><br>
+            Value = D₀ / kₑ<br>
+            <small>Where: D₀ = Current dividend, kₑ = Required return</small>
+        </div>
+
+        <div class='formula-box'>
+            <strong>Constant Growth Model (Gordon Growth):</strong><br>
+            Value = D₁ / (kₑ - g)<br>
+            <small>Where: D₁ = Next year's dividend, g = Growth rate</small>
+        </div>
+
+        <div class='practice-example'>
+            <h4>💡 Practice Example:</h4>
+            <p>Share pays R2 dividend, grows at 5%, investors require 12% return:</p>
+            <div class='calculation'>
+                Value = (R2 × 1.05) / (0.12 - 0.05)<br>
+                Value = R2.10 / 0.07<br>
+                Value = R30 per share
+            </div>
+        </div>
+
+        <div class='warning'>
+            <strong>Important Note</strong>: Growth rate (g) must be less than required return (kₑ)!
+        </div>
+
+        <div class='key-concept'>
+            <h4>🔑 Key Formula Set 4: Debt Valuation</h4>
+        </div>
+
+        <div class='formula-box'>
+            <strong>Irredeemable Debt:</strong><br>
+            Value = Annual Interest / kd
+        </div>
+
+        <div class='formula-box'>
+            <strong>Redeemable Debt:</strong><br>
+            Value = Σ [Interest / (1 + kd)ᵗ] + [Redemption Value / (1 + kd)ⁿ]
+        </div>
+
+        <div class='practice-example'>
+            <h4>💡 Practice Example:</h4>
+            <p>Bond pays R80 annual interest, redeems at R1,000 in 5 years, market rate 10%:</p>
+            <div class='calculation'>
+                Value = 80 × [PV Annuity Factor] + 1,000 × [PV Factor]<br>
+                Value = 80 × 3.791 + 1,000 × 0.621<br>
+                Value = R303 + R621 = R924
+            </div>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <div class='success-factors'>
+            <h2>🎯 Key Points to Remember</h2>
+            <h3>🔥 Critical Success Factors</h3>
+            <ol>
+                <li><strong>Financial Management = 3 Activities</strong>: Financing, Investing, Controlling</li>
+                <li><strong>Goal Evolution</strong>: From shareholder wealth → sustainable value creation</li>
+                <li><strong>Six Capitals</strong>: Financial is just ONE of six capitals</li>
+                <li><strong>Stakeholders</strong>: Balance ALL stakeholder interests</li>
+                <li><strong>Risk Types</strong>: Business risk + Financial risk = Total risk</li>
+                <li><strong>Time Value</strong>: Money today > Money tomorrow</li>
+                <li><strong>Valuation</strong>: All values = Present value of future cash flows</li>
+            </ol>
+        </div>
+
+        <div class='example-box'>
+            <h3>📝 Common Exam Topics</h3>
+            <h4>1. Calculations:</h4>
+            <ul>
+                <li>Future value and present value</li>
+                <li>Share valuation (no growth, constant growth)</li>
+                <li>Bond/debt valuation</li>
+                <li>Loan payments</li>
+            </ul>
+            <h4>2. Theory Questions:</h4>
+            <ul>
+                <li>Role of financial manager</li>
+                <li>Stakeholder theory vs. shareholder theory</li>
+                <li>Business model components</li>
+                <li>Risk types and examples</li>
+            </ul>
+        </div>
+
+        <div class='warning'>
+            <h3>🚨 Common Mistakes to Avoid</h3>
+            <h4>1. Formula Errors:</h4>
+            <ul>
+                <li>Confusing FV and PV formulas</li>
+                <li>Using wrong growth model when g ≥ kₑ</li>
+                <li>Forgetting to adjust for different compounding periods</li>
+            </ul>
+            <h4>2. Conceptual Errors:</h4>
+            <ul>
+                <li>Thinking only about shareholders (ignore other stakeholders)</li>
+                <li>Confusing business risk with financial risk</li>
+                <li>Not understanding difference between primary and secondary markets</li>
+            </ul>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <h2>💪 Study Strategy Recommendations</h2>
+
+        <div class='example-box'>
+            <h3>📅 Week 1: Foundation</h3>
+            <ul>
+                <li>Master the three finance activities</li>
+                <li>Understand stakeholder vs. shareholder approaches</li>
+                <li>Learn the six capitals framework</li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h3>📅 Week 2: Calculations</h3>
+            <ul>
+                <li>Practice time value of money calculations daily</li>
+                <li>Master present value and future value formulas</li>
+                <li>Work through valuation examples</li>
+            </ul>
+        </div>
+
+        <div class='example-box'>
+            <h3>📅 Week 3: Integration</h3>
+            <ul>
+                <li>Connect theory to practical examples</li>
+                <li>Practice exam-style questions</li>
+                <li>Focus on weak areas identified</li>
+            </ul>
+        </div>
+
+        <div class='key-concept'>
+            <h3>📚 Active Learning Techniques</h3>
+            <ol>
+                <li>📊 <strong>Create Visual Maps</strong>: Draw stakeholder relationship diagrams</li>
+                <li>🔢 <strong>Daily Formula Practice</strong>: 5 calculations per day</li>
+                <li>📝 <strong>Teach Someone Else</strong>: Explain concepts to friends/family</li>
+                <li>🎯 <strong>Case Studies</strong>: Apply concepts to real companies</li>
+                <li>🤔 <strong>"What If" Scenarios</strong>: How do changes affect valuations?</li>
+            </ol>
+        </div>
+
+        <div class='section-divider'></div>
+
+        <div class='checklist'>
+            <h2>✅ Self-Assessment Checklist</h2>
+            <h3>Theory Understanding:</h3>
+            <ul>
+                <li>Can explain the three finance activities</li>
+                <li>Can distinguish business risk from financial risk</li>
+                <li>Can describe all six capitals</li>
+                <li>Can explain stakeholder theory</li>
+                <li>Can describe JSE listing requirements</li>
+            </ul>
+            <h3>Calculation Skills:</h3>
+            <ul>
+                <li>Can calculate future value</li>
+                <li>Can calculate present value</li>
+                <li>Can value shares (no growth model)</li>
+                <li>Can value shares (constant growth model)</li>
+                <li>Can value bonds/debt</li>
+            </ul>
+            <h3>Application Ability:</h3>
+            <ul>
+                <li>Can identify stakeholders for any business</li>
+                <li>Can analyze business models using the canvas</li>
+                <li>Can assess investment decisions using NPV concepts</li>
+                <li>Can explain time value of money to others</li>
+            </ul>
+        </div>
+
+        <div class='success-factors'>
+            <h2>🎯 Next Steps</h2>
+            <p>Once you've mastered Chapter 1:</p>
+            <ol>
+                <li><strong>Move to Chapter 2</strong>: Strategy and Business Models</li>
+                <li><strong>Review connections</strong>: How does Chapter 1 link to Chapter 2?</li>
+                <li><strong>Maintain practice</strong>: Keep doing time value calculations regularly</li>
+                <li><strong>Build portfolio</strong>: Start following JSE-listed companies</li>
+            </ol>
+            <p class='highlight'><strong>Remember</strong>: Financial management is about creating sustainable value for ALL stakeholders through effective financing, investing, and controlling decisions! 🚀</p>
+        </div>
+    </div>
+</body>
+</html>
